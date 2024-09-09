@@ -67,3 +67,12 @@ btnHold.addEventListener('click', function() {
 }
 }
 );
+
+
+btnNew.addEventListener('click', function(){
+    score0El.textContent = 0;
+    score1El.textContent = 0;
+    document.getElementById(`current--${activePlayer}`).textContent = 0;
+    activePlayer = activePlayer === 0 ? 1 : 0;
+
+})
